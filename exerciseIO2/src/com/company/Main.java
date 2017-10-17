@@ -14,8 +14,8 @@ public class Main {
 
         String extensionChoice = "";
         boolean extSelected = false;
+        
         while (!extSelected){
-
             System.out.println(" filtrages des extensions : ");
             System.out.println(" 1 - .py");
             System.out.println(" 2 - .php");

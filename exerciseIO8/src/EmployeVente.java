@@ -1,14 +1,10 @@
 public class EmployeVente extends Employes {
 
-    public float chiffreAffaire;
-
-    public EmployeVente(String nom, int age, int chiffreAffaire) {
-
-        super(nom, age);
-        this.chiffreAffaire = chiffreAffaire;
+       public EmployeVente(String nom,String prenom, int age,int anneeEntree, int chiffreAffaire) {
+        super(nom, prenom, age, anneeEntree, chiffreAffaire);
     }
 
     public float calculerSalaire() {
-        return (float)((this.chiffreAffaire * 0.2) + 400);
+        return (float)((this.getUnite() * 0.2) + 400);
     }
 }

@@ -1,15 +1,12 @@
 public class EmployeProduction extends Employes {
 
-        public int nombrePieceProduite;
-
-        public EmployeProduction(String nom, int age, int nombrePieceProduite) {
-
-            super(nom, age);
-            this.nombrePieceProduite = nombrePieceProduite;
+        public EmployeProduction(String nom,String prenom, int age,int anneeEntree, int nombrePieceProduite) {
+            super(nom, prenom, age,anneeEntree, nombrePieceProduite);
         }
 
+        @Override
         public float calculerSalaire() {
-            return (float)(this.nombrePieceProduite* 5);
+            return (float)(this.getUnite() * 5);
         }
 
 }

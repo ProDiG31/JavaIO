@@ -1,7 +1,7 @@
 public class EmployeManutentionARisque extends  EmployeManutention{
 
-        public EmployeManutentionARisque(String nom, int age, int nombreHeure) {
-            super(nom, age, nombreHeure);
+        public EmployeManutentionARisque(String nom, String prenom, int age,int anneeEntree, int nombreHeure) {
+            super(nom, prenom, age, anneeEntree, nombreHeure);
         }
 
         @Override
